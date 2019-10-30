@@ -3,14 +3,16 @@ import {connect} from 'react-redux';
 import {incrementCounter, decrementCounter} from './testActions'
 import { Button } from "semantic-ui-react";
 
+// MapStateToProps
 const mapState = (state) => ({
     data: state.test.data
-})
+}) 
 
+// MapDispatchToProps
 const actions = {
     incrementCounter,
     decrementCounter
-}
+} 
 
 class TestComponent extends Component {
   render() {
