@@ -25,7 +25,7 @@ const EventDetailedInfo = ({ event }) => {
           <Grid.Column width={15}>
             <span>
               {event.date && format(parseISO(event.date), "EEEE do LLLL ")} at
-              {format(parseISO(event.date), " h:mm a")}
+              {format(event.date.toDate(), " h:mm a")}
             </span>
           </Grid.Column>
         </Grid>
